@@ -1,0 +1,109 @@
+body{
+    min-height: 100vh;
+background:
+linear-gradient(
+90deg,
+#090909,
+#1c1c1c,
+#090909,
+#171717,
+#090909
+);
+border-top: 3px solid red;
+}
+
+nav {
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.5)
+    );
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0px;
+}
+nav a{
+    color: white;
+    font-family: "Orbitron", sans-serif;
+}
+nav a:hover{
+    color: gray
+}
+.logo{
+    transition: all 1s ease;
+}
+.logos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logos img{
+    height: 315px;
+    width: 315px;
+    cursor: pointer;
+}
+.logo:hover{
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+h1 {
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    color: white;
+}
+h2{
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    color: #e10600;
+}
+.teamInfo {
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+    gap: 150px;
+    background: transparent;
+    opacity: 0;
+    transition: opacity 1s ease;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+p{
+    color: white;
+    font-family: "Orbitron", sans-serif;
+}
+.teamName{
+    color: white;
+    font-size: 0.99rem;
+    margin: 0;
+
+}
+.shortinfos{
+    width: 35%;
+    line-height: 1.7;
+}
+.longInfos{
+    width: 65%;
+    line-height: 1.7;
+    position: relative;
+}
+button{
+    display: none;
+    transition: all 0.7s ease;
+    position: absolute;
+    right: 15px;
+    top: 70px;   
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: red;
+    transition: all 0.7s ease;
+}

@@ -1,0 +1,96 @@
+body{
+    background: radial-gradient(
+    circle at 75% 50%,
+    rgba(180,130,0,0.5),
+    rgba(20,20,20,0.9) 40%,
+    #050505 80%
+);
+    border-top: 3px solid #e10600; 
+}
+nav {
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.5)
+    );
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0px;
+}
+nav a{
+    color: white;
+    font-family: "Orbitron", sans-serif;
+}
+nav a:hover{
+    color: gray
+}
+h1{
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    color: white;
+}
+h2{
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    color: white;
+}
+.cup{
+    height: 420px;
+    width: 230px;
+}
+.containers{
+    display: flex;
+    justify-content: center;
+}
+.years {
+    width: 30%;
+}
+.champions {
+    width: 70%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.years{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+.years button {
+    width: 200px;
+    height: 70px;
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+.years button:hover{
+    background: linear-gradient(
+        90deg,
+        rgba(212, 175, 55, 0.1),
+        rgba(212, 175, 55, 0.35),
+        rgba(212, 175, 55, 0.1)
+    );
+    transform: scale(1.1);
+    transition: all 1s ease;
+    border: 2px solid white;
+    cursor: pointer;
+}
+p{
+    font-family: "Orbitron", sans-serif;
+    color: white;
+}
+h3{
+    font-family: "Orbitron", sans-serif;
+    color: white;
+}
+.select{
+    margin-left: 40px;
+}

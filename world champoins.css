@@ -37,6 +37,8 @@ h2{
 .cup{
     height: 420px;
     width: 230px;
+    position: absolute;
+    right: 30px;
 }
 .containers{
     display: flex;
@@ -44,6 +46,7 @@ h2{
 }
 .years {
     width: 30%;
+    position: relative;
 }
 .champions {
     width: 70%;
@@ -93,4 +96,25 @@ h3{
 }
 .select{
     margin-left: 40px;
+    display: flex;
+}
+.champName{
+    display:flex;
+    justify-content: center;
+    font-family: "Orbitron", sans-serif;
+    color: white;
+    margin-bottom: 50px;
+}
+.infos{
+    max-width: 600px;
+    line-height: 2;
+    transform: translateY(-30px);
+}
+.activeYear{
+    background: linear-gradient(
+        90deg,
+        rgba(212, 175, 55, 0.1),
+        rgba(212, 175, 55, 0.35),
+        rgba(212, 175, 55, 0.1)
+    );
 }

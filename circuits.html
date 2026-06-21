@@ -17,21 +17,21 @@
     <h2>Legendary tracks that shaped Formula 1</h2>
     <h3>Click for more info</h3>
     <div class="tracks">
-        <div class="track">
+        <div  id="jeddahtrack" class="track">
             <img src="jeddahtrack.png">
                 <p>Jeddah Corniche Circuit</p>
                 <p>Location: 🇸🇦 Jeddah, Saudi Arabia</p>
                 <p>Track Length: 6.174 km</p>
-                <p>Last Winner: Oscar Piastri, Mclaren (2025)</p>
+                <p>Last Winner: Max Verstappen, Red Bull (2025)</p>
         </div>
-        <div class="track">
+        <div id="qatartrack" class="track">
             <img src="qatar track.avif">
             <p>Lusail International Circuit</p>
             <p>Location: 🇶🇦 Lusail, Qatar</p>
             <p>Track Length: 5.419 km</p>
             <p>Last Winner: Max Verstappen, Red Bull (2025)</p>
         </div>
-        <div class="track">
+        <div id="spielbergtrack" class="track">
             <img src="spielbergtrack.jpg">
             <p>Red Bull Ring</p>
             <p>Location: 🇦🇹 Spielberg, Austria</p>
@@ -39,5 +39,27 @@
             <p>Last Winner: Lando Norris, Mclaren (2025)</p>
         </div>
     </div>
+    <div class="modalOverlay">
+        <div class="circuitModal">
+            <button id="closeBtn">&times;</button>
+            <h2 id="trackTitle" class="trackTitle"></h2>
+            <div class="leftside">
+                <p id="trackLocation"></p>
+                <p id="trackLenght"></p>
+                <p id="turns"></p>
+                <p id="firstGp"></p>
+                <p id="lapRecord"></p>
+                <p id="lastWinner"></p>
+            </div>
+            <div class="rightside">
+                <img id="trackjeddah" class="trackjeddah" src="jeddahtrack.avif">
+                <img id="trackqatar" class="trackqatar" src="qatartrack.avif">
+                <img id="trackspielberg" class="trackspielberg" src="spielbergtrack.avif">
+                <p id="nehezseg" class="nehezseg"></p>
+                <p id="type" class="type"></p>
+            </div>
+        </div>
+    </div>
+    <script src="circuit style.js"></script>
     </body>
 </html>

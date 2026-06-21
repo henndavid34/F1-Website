@@ -69,3 +69,109 @@ p{
     0 0 15px rgba(255, 255, 255, 0.3),
     0 0 35px rgba(255, 255, 255, 0.2);
 }
+.modalOverlay{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+}
+.circuitModal{
+    width: 75%;
+    height: 75%;
+    background: linear-gradient(
+    120deg,
+    #0f0f0f 0%,
+    #181818 40%,
+    #262626 50%,
+    #181818 60%,
+    #0f0f0f 100%
+);
+box-shadow: 0 0 40px rgba(255, 255, 255, 0.03);
+    position: relative;
+    animation: modalFade 0.3s ease;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+}
+.circuitModal button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    background-color: #E10600;
+    border: #E10600; 
+}
+.circuitModal button:hover{
+    cursor: pointer;
+    background-color: #FF2D20;;
+    box-shadow: 0 0 10px rgba(225, 6, 0, 0.6);
+}
+
+@keyframes modalFade {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.leftside p{
+    line-height: 3;
+}
+.trackTitle{
+    border-bottom: 2px solid #E10600;
+}
+.trackjeddah{
+    position: absolute;
+    top: 105px;
+    right: 150px;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+.trackqatar{
+    position: absolute;
+    top: 105px;
+    right: 150px;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+.trackspielberg{
+    position: absolute;
+    top: 105px;
+    right: 150px;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+.nehezseg{
+    position: absolute;
+    bottom: 105px;
+    right: 150px;
+}
+.type{
+    position: absolute;
+    bottom: 70px;
+    right: 150px;
+}
+.label{
+    color: #E10600;
+}
+.stars{
+    font-size: 22px;
+    text-shadow: 0 0 4px #ffd700;
+}

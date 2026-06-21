@@ -16,6 +16,11 @@ const teamPrincipal = document.querySelector("#teamPrincipal");
 const about = document.querySelector("#about");
 const teamText = document.querySelector("#teamText");
 
+const redbullcar = document.querySelector("#redbullcar");
+const mercedescar = document.querySelector("#mercedescar");
+const mclarencar = document.querySelector("#mclarencar");
+const ferraricar = document.querySelector("#ferraricar");
+
 
 
 
@@ -24,6 +29,10 @@ redbull.addEventListener("click", function (){
     logos.style.display = "none";
     backBtn.style.display = "flex";
     teamInfo.style.display = "flex";
+    redbullcar.style.display = "flex";
+    mercedescar.style.display = "none";
+    mclarencar.style.display = "none";
+    ferraricar.style.display = "none";
 
     setTimeout(function() {
     teamInfo.style.opacity = "1";
@@ -44,6 +53,10 @@ mercedes.addEventListener("click", function (){
     logos.style.display = "none";
     backBtn.style.display = "flex";
     teamInfo.style.display = "flex";
+    redbullcar.style.display = "none";
+    mercedescar.style.display = "flex";
+    mclarencar.style.display = "none";
+    ferraricar.style.display = "none";
 
     setTimeout(function() {
     teamInfo.style.opacity = "1";
@@ -63,6 +76,10 @@ mclaren.addEventListener("click", function (){
     logos.style.display = "none";
     backBtn.style.display = "flex";
     teamInfo.style.display = "flex";
+    redbullcar.style.display = "none";
+    mercedescar.style.display = "none";
+    mclarencar.style.display = "flex";
+    ferraricar.style.display = "none";
 
     setTimeout(function() {
     teamInfo.style.opacity = "1";
@@ -82,6 +99,10 @@ ferrari.addEventListener("click", function(){
     logos.style.display = "none";
     backBtn.style.display = "flex";
     teamInfo.style.display = "flex";
+    redbullcar.style.display = "none";
+    mercedescar.style.display = "none";
+    mclarencar.style.display = "none";
+    ferraricar.style.display = "flex";
 
      setTimeout(function() {
     teamInfo.style.opacity = "1";
